@@ -75,15 +75,15 @@
           
           <div class="has-text-centered">
             <img src="static/images/data_modalities_v2.png" alt="2D vs 3D Modalities" class="method-img">
-            <p class="is-size-6 mt-2"><i>Comparison of 2D and 3D Modalities: CLAR leverages 3D point clouds to resolve multi-view ambiguity[cite: 52, 55].</i></p>
+            <p class="is-size-6 mt-2"><i>Comparison of 2D and 3D Modalities: CLAR leverages 3D point clouds to resolve multi-view ambiguity.</i></p>
           </div>
 
           <div class="content has-text-justified mt-5">
             <p>
-              The spatial information inherent in 3D point clouds is crucial for robotic manipulation[cite: 3]. However, existing 3D pre-training methods face a fundamental trade-off: Masked Autoencoding (MAE) excels at capturing spatial-geometric features but lacks semantics, whereas contrastive learning is ill-suited for fine-grained details[cite: 4, 24].
+              The spatial information inherent in 3D point clouds is crucial for robotic manipulation. However, existing 3D pre-training methods face a fundamental trade-off: Masked Autoencoding (MAE) excels at capturing spatial-geometric features but lacks semantics, whereas contrastive learning is ill-suited for fine-grained details.
             </p>
             <p>
-              To address these challenges, we propose <strong>CLAR</strong>, a novel 3D pre-training framework that synergizes global understanding with fine-grained local alignment[cite: 5]. CLAR unifies MAE with global cross-modal contrastive learning and introduces an adaptive alignment mechanism leveraging <strong>deformable attention</strong> to force precise 3D-to-2D correspondences[cite: 6, 7].
+              To address these challenges, we propose <strong>CLAR</strong>, a novel 3D pre-training framework that synergizes global understanding with fine-grained local alignment. CLAR unifies MAE with global cross-modal contrastive learning and introduces an adaptive alignment mechanism leveraging <strong>deformable attention</strong> to force precise 3D-to-2D correspondences.
             </p>
           </div>
         </div>
@@ -99,10 +99,10 @@
           <img src="static/images/pipeline.png" alt="CLAR Pipeline" class="method-img">
           <div class="content has-text-justified mt-4">
             <p>
-              <strong>(a) The CLAR Pre-training Framework:</strong> We enhance spatial understanding via MAE and semantic comprehension through contrastive learning[cite: 110]. To capture fine-grained local details, we supplement the global contrastive loss with an adaptive local feature alignment mechanism using deformable attention[cite: 111, 147].
+              <strong>(a) The CLAR Pre-training Framework:</strong> We enhance spatial understanding via MAE and semantic comprehension through contrastive learning. To capture fine-grained local details, we supplement the global contrastive loss with an adaptive local feature alignment mechanism using deformable attention.
             </p>
             <p>
-              <strong>(b) Resolving Contextual Mismatch:</strong> Traditional point cloud cropping removes background context, leading to feature discrepancy[cite: 112]. Our adaptive local alignment strategy ensures learning focuses on meaningful, shared information between modalities[cite: 59].
+              <strong>(b) Resolving Contextual Mismatch:</strong> Traditional point cloud cropping removes background context, leading to feature discrepancy. Our adaptive local alignment strategy ensures learning focuses on meaningful, shared information between modalities.
             </p>
           </div>
         </div>
@@ -118,7 +118,7 @@
         <div class="column is-full-width">
           <h3 class="title is-4">Simulation Benchmarks (MetaWorld & RLBench)</h3>
           <img src="static/images/main.png" alt="Table I Results" class="results-img">
-          <p class="is-size-6 mt-2">CLAR achieves state-of-the-art success rates (82.6% on MetaWorld and 82.0% on RLBench), outperforming 2D baselines and existing 3D pre-training methods[cite: 66, 219].</p>
+          <p class="is-size-6 mt-2">CLAR achieves state-of-the-art success rates (82.6% on MetaWorld and 82.0% on RLBench), outperforming 2D baselines and existing 3D pre-training methods.</p>
         </div>
       </div>
 
@@ -133,7 +133,7 @@
               <img src="static/images/real_world_01.png" alt="Real World Visualizations" class="results-img">
             </div>
           </div>
-          <p class="is-size-6 mt-2">CLAR demonstrates robust generalization across multiple real-world tasks including <i>pick-banana</i> and <i>open-drawer</i>, achieving 83.0% mean success rate[cite: 66, 312].</p>
+          <p class="is-size-6 mt-2">CLAR demonstrates robust generalization across multiple real-world tasks including <i>pick-banana</i> and <i>open-drawer</i>, achieving 83.0% mean success rate.</p>
         </div>
       </div>
     </div>
